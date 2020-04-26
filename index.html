@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Strona</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div id="fullscreen">
+	<div id="header">
+	<h1>Kino Kosmos </h1>
+	</div>
+	
+	<div id="left">
+
+	<h1 id="główny">Cennik Kina</h1>
+	<br>
+	<p class="film">Filmy 2D:</p>
+	
+	<li>Bilety normalne po 24 zł</li>
+	<li>Bilety ulgowe po 12 zł</li>
+	<br>
+	<p class="film">Filmy 3D:</p>
+	
+	<li>Bilety normalne po 28 zł</li>
+	<li>Bilety uglowe po 14 zł</li>
+	<br>
+	
+	<a href="regulamin.html">Regulamin</a>
+	
+	</div>
+	
+	<div id="main">
+	
+	Cena biletów
+	Ile biletów: <input type="number" value=0 id="bilety"/> </p>
+	<br>
+	<input type="checkbox" id="ulga" /> Bilety ulgowe </p>
+	<input type="checkbox" id="bilety3D" /> Bilety na film 3D </p>
+	<br>
+	<button id="button-oblicz">Cena do zapłacenia: </button>
+	<p id="wynik"> </p>
+	<br>
+	
+	</div>
+	
+	<div id="right">
+	Nasze seanse
+	<img src="astronauta.png" id="astro" alt="Kosmicznie" >
+	<a href="https://www.filmweb.pl/film/WALL%C2%B7E-2008-399328"><img src="walle.jpg" id="walle" alt="WALLE" ></a>
+	<a href="https://www.filmweb.pl/film/Gwiezdne+wojny%3A+Przebudzenie+Mocy-2015-671051"><img src="starwars.jpg" id="starwars" alt="STAR WARS"></a>
+	</div>
+	
+	<div id="footer">
+	Autor: Arkadiusz Lenart IIID nr. 15
+	</div>
+	<script src="script.js"></script>
+	</div>
+</body>
+</html>
