@@ -81,7 +81,7 @@ body {
 	bottom:10vh;
 	height: 45%;
 	width: auto;
-
+	right:2vw;
 	float: left;
 }
 @media screen and (max-width: 900px) {
@@ -89,12 +89,23 @@ body {
     font-size: 12px;
   }
   #astro {position: absolute;
-	  bottom:50px;
+	  top: 50vw;
+	  left:15vw;
+  }
+   #starwars, #astro, #walle{height: 35%;
+	width: auto;  
   }
 }
 @media screen and (max-height:500px)  {
   body {
     font-size: 12px;
+  }
+  #astro {position: absolute;
+	  bottom:10px;
+  }
+  #starwars, #astro, #walle {height: 25%;
+	width: auto;
+	  
   }
   #astro {position: absolute;
 	  bottom:10px;
