@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Strona</title>
+<title>Kino Kosmos</title>
 	<link rel="stylesheet" href="style.css">
 	
 	<meta charset="UTF-8"/>
@@ -9,55 +9,50 @@
 </head>
 
 <body>
-<div id="fullscreen">
-	<div id="header">
-	<h1>Kino Kosmos </h1>
-	</div>
-	
-	<div id="left">
 
-	<h1 id="główny">Cennik Kina</h1>
-	<br>
-	<p class="film">Filmy 2D:</p>
-	
-	<li>Bilety normalne po 24 zł</li>
-	<li>Bilety ulgowe po 12 zł</li>
-	<br>
-	<p class="film">Filmy 3D:</p>
-	
-	<li>Bilety normalne po 28 zł</li>
-	<li>Bilety uglowe po 14 zł</li>
-	<br>
-	
-	<a href="regulamin.html">Regulamin</a>
-	
+	<div id="header">
+	<h1 id="pierwszyh1">Kino Kosmos</h1>
 	</div>
+	<nav> 
+		<a href="repertuar.html" class="menu">REPERTUAR</a><a href="index.html" class="menu active">BILETY</a><a href="Onas.html" class="menu">O NAS</a><a href="regulamin.html" class="menu">REGULAMIN</a>
+		</nav>
+</div>
+	<div id="wrapper">
 	
 	<div id="main">
+		
+	<h1 id="cennik">Cennik Kina</h1>
 	
-	Cena biletów
-	Ile biletów: <input type="number" value=0 id="bilety"/> </p>
+	<p class="tekst">Filmy 2D:</p>
+	
+	<li class="tekst">Bilety normalne po 24 zł</li>
+	<li class="tekst">Bilety ulgowe po 12 zł</li>
 	<br>
-	<input type="checkbox" id="ulga" /> Bilety ulgowe </p>
-	<input type="checkbox" id="bilety3D" /> Bilety na film 3D </p>
+	<p class="tekst">Filmy 3D:</p>
+	
+	<li class="tekst">Bilety normalne po 28 zł</li>
+	<li class="tekst">Bilety uglowe po 14 zł</li>
+	</br>
+	<a href="regulamin-bilety.pdf" download="regulamin-bilety.pdf"class="tekst">Regulamin cen</a></br>
+	</br>
+	<a class="tekst">Ile biletów:</a> <input type="number" value=0 id="bilety" class="tekst"/> </p>
 	<br>
-	<button id="button-oblicz">Cena do zapłacenia: </button>
-	<p id="wynik"> </p>
+	<input type="checkbox" id="ulga" class="tekst" /> Bilety ulgowe </p>
+	<input type="checkbox" id="bilety3D" class="tekst" /> Bilety na film 3D </p>
 	<br>
+	<button id="button-oblicz" class="tekst">Cena do zapłacenia: </button>
+	<p id="wynik" class="tekst"></p>
+	
 	
 	</div>
 	
-	<div id="right">
-	<h2>Nasze seanse</h2>
-	<img src="astronauta.png" id="astro" alt="Kosmicznie" >
-	<a href="https://www.filmweb.pl/film/WALL%C2%B7E-2008-399328"  target="_blank"><img src="walle.jpg" id="walle" alt="WALLE" ></a>
-	<a href="https://www.filmweb.pl/film/Gwiezdne+wojny%3A+Przebudzenie+Mocy-2015-671051"  target="_blank"><img src="starwars.jpg" id="starwars" alt="STAR WARS"></a>
 	</div>
-	
 	<div id="footer">
-	Autor: Arkadiusz Lenart IIID nr. 15
-	</div>
-	<script src="script.js"></script>
-	</div>
+	<a id="autor">Autor: Arkadiusz Lenart IIID nr. 15</a>
+	<div id="zegarek">
+	</div></div>
+	<script src="script.js"  type="text/javascript"></script>
+	<script src="script2.js"  type="text/javascript"></script>
+	
 </body>
 </html>
