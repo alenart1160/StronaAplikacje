@@ -1,113 +1,206 @@
 *{
 	margin: 0;
 	padding:0;
-	box-sizing: border-box;
+	font-family: Gill Sans, sans-serif;
+	box-sizing:border-box;
 }
-html {width:100%;height:100%;}
+html {
+    height: 100%;
+}
 body {
-	background: #87798a;
-	font-size: 20px;
-	
+	height: 100%;
+	background-color: #87798a;
+	overflow-x:hidden;
+}
+.kontener{
+	margin: 0 auto;
+	margin-top:20px;
+	position:relative;
+	width: 50%;
+	height: 0;
+	padding-bottom: 30%;
+	border: solid 5px;
 }
 #header{	
-	font-family: Gill Sans, sans-serif;
-	height: 15vh;
-	width:100vw;
+	font-family: Roboto;
+	height: 25 vh;
+	width: 100vw;
+	background: url("kosmos.jpg") center;
+	background-size: cover; 
+	color: blue;
+	flex-direction:column;	
 	display: flex;
-	background-image: url("kosmos.jpg");
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-size: cover; 
+}
+#wrapper {
+	max-width:1200px;
+	margin: 0 auto 0 auto;
+	background: gray;
+	padding-bottom:20px;
+}
+nav {
+	background-color:purple;
+}
+.menu {
+	width: 100vw;	
+}
+a.menu {
+	display: inline-block;
+	width:25%;
+	padding: 15px 30px;
 	color: white;
-	
+	text-decoration: none;
+	text-align: center;
 }
-#left{
-	margin-top:5vh;
-	width: 15vw;
-	height: 75vh;
-	float: left;
-	
-  margin-left:3vw;
+a.menu:hover {
+	background-color: darkcyan;
 }
+.active {
+	background-color:darkcyan;
+}
+
+#pierwszyh1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-align:center;
+}
+
 #main{
-	margin-top:5vh;
-	margin-left:10vw;
-	width: 40vw;
-	
-	float:left;
+	padding: 30px;
+	line-height:25px;
+	max-width:1200px;
+	margin: 0 auto 0 auto;
+	background: gray;
+	padding-bottom:20px;
+	height:100%;
+}
+.tekst {
+	margin-left:40%; margin-top:10px;
+}
+.tekst2{
+	text-align:center;
 }
 
-#right{
-	margin-top:5vh;
-	width:20vw;
-
-	float: left;
+.tekst3{
+	margin-left:20%; margin-right:10%; margin-top:10px;
 }
 
 #footer{
-	text-decoration: underline;
-	height: 5vh;
-	clear: both;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 35px;
+	width: 100%;
+	bottom: 0;
 	background-color: #0e0e16;
 	color:white;
 	text-align:center;
-	
 }
-#główny{
+#cennik{
+	font-size:30px;
 	text-align: center;
+	margin: 0 10% 20px;
+	padding-bottom:5px;
+	border-bottom: 2px solid purple;	
+}
+#wynik{
+	margin-bottom:10px;
+	margin-top:10px;
+}
+#autor{
+	text-decoration: underline;
+}
+
+.zegarek {
+	text-decoration: none;
+}
+#obrazki {
+	float:left;
+	margin-right: 10px;
+}
+.zdjęcie {
+	border-radius: 10px;
+}
+.slide_img{
+	position: absolute;
+	width:100%;
+	height: 100%;
+}
+.slide_img img{
+	width:100%;
+	height: 100%;
+}
+#i1, #i2, #i3{ display: none;}
+.pre, .nxt{
+	width: 12%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: rgba(88,88,88,.4);
+	z-index:99;
+	cursor: pointer;
+}
+.pre{
+	left: 0;
+}
+.nxt{
+	right: 0;
+}
+.nav1{
+	width:100%;
+	height:11px;
+	bottom:12%;
+	position:absolute;
+	text-align: center;
+	z-index:99;
+}
+.dots{
+	top: -5px;
+	width:18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0,0,0,.6);
+}
+.slide_img{
+	z-index:-1;
+}
+#i1:checked ~#one,
+#i2:checked ~#two,
+#i3:checked ~#three{ z-index:9;}
+
+#i1:checked ~.nav1 #dot1,
+#i2:checked ~.nav1 #dot2,
+#i3:checked ~.nav1 #dot3{
+	background: #fff;
+}
+.zdj{
+	width:250px;
+	height:400px;
+	margin-left:5px;
+	cursor: pointer;
+}
+
+.tekstnews{
+	text-align:center;
+	margin-bottom:40px;
+}
+
+#news{
+	
+	width:70%;
+	margin-left:20%;
+	margin-top: 10px;
 	
 }
-#astro{
-	transform: scaleX(-1);
-	position: absolute;
-	left: 30vh;
-	top: 25vw;
-	height: 40%;
-	width: auto;
+.kon{
+float:left;
+height:100%;
 }
-#walle{
-	transform: scaleX(1);
-	position: absolute;
-	bottom: 10vh;
-	right:25vw;
-	height: 45%;
-	width:auto;
+.kon1{height:100%;
+	
 	float: left;
-}
-#starwars{
-	transform: scaleX(1);
-	position: absolute;
-	bottom:10vh;
-	height: 45%;
-	width: auto;
-	right:2vw;
-	float: left;
-}
-@media screen and (max-width: 900px) {
-  body {
-    font-size: 12px;
-  }
-  #astro {position: absolute;
-	  top: 50vw;
-	  left:15vw;
-  }
-   #starwars, #astro, #walle{height: 35%;
-	width: auto;  
-  }
-}
-@media screen and (max-height:500px)  {
-  body {
-    font-size: 12px;
-  }
-  #astro {position: absolute;
-	  bottom:10px;
-  }
-  #starwars, #astro, #walle {height: 25%;
-	width: auto;
-	  
-  }
-  #astro {position: absolute;
-	  bottom:10px;
-  }
 }
