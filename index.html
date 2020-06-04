@@ -3,23 +3,25 @@
 <head>
 <title>Kino Kosmos</title>
 	<link rel="stylesheet" href="style.css">
-	
+	<link rel="icon" href="path76.png" type="image" size="36x36">
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-
+<main>
+<article>
+<div class="container">
 	<div id="header">
-	<h1 id="pierwszyh1">Kino Kosmos</h1>
+	<img src="rysunek.svg" class="zdje">
 	</div>
 	<nav> 
 		<a href="repertuar.html" class="menu">REPERTUAR</a><a href="index.html" class="menu active">BILETY</a><a href="Onas.html" class="menu">O NAS</a><a href="regulamin.html" class="menu">REGULAMIN</a>
 		</nav>
-</div>
-	<div id="wrapper">
+
 	
-	<div id="main">
+	<div class="bil">
+	
 		
 	<h1 id="cennik">Cennik Kina</h1>
 	
@@ -33,20 +35,25 @@
 	<li class="tekst">Bilety normalne po 28 zł</li>
 	<li class="tekst">Bilety uglowe po 14 zł</li>
 	</br>
-	<a href="regulamin-bilety.pdf" download="regulamin-bilety.pdf"class="tekst">Regulamin cen</a></br>
+	<a href="regulamin-bilety.pdf" download="regulamin-bilety.pdf"class="tekst linka">Regulamin cen</a></br>
 	</br>
 	<a class="tekst">Ile biletów:</a> <input type="number" value=0 id="bilety" class="tekst"/> </p>
+	
 	<br>
 	<input type="checkbox" id="ulga" class="tekst" /> Bilety ulgowe </p>
 	<input type="checkbox" id="bilety3D" class="tekst" /> Bilety na film 3D </p>
 	<br>
-	<button id="button-oblicz" class="tekst">Cena do zapłacenia: </button>
+	<button id="button-oblicz" class="tekst">Cena do zapłacenia </button>
+	<a href="bilety2.html" class="przycisk" target="_blank">Generator biletu</a>
 	<p id="wynik" class="tekst"></p>
+	</div>
+
+	
 	
 	
 	</div>
-	
-	</div>
+</article>
+</main>
 	<div id="footer">
 	<a id="autor">Autor: Arkadiusz Lenart IIID nr. 15</a>
 	<div id="zegarek">

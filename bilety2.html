@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kino Kosmos</title>
+	<link rel="stylesheet" href="style2.css">
+	<link rel="icon" href="path76.png" type="image" size="36x36">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <script>
+			var imie = prompt("Podaj imię i nazwisko: ", "")
+            var film = prompt("Podaj tytuł filmu: ", "");
+            var bilet = prompt("Biletu ulgowy/ normalny: ", "");
+            var miejsce = prompt("Podaj miejsce:", "");
+			 var godzina = prompt("Podaj godzinę seansu:", "");
+  </script>
+<div class="cardWrap">
+  <div class="card cardLeft">
+    <h1>Kino <span>Kosmos</span></h1>
+    <div class="title">
+     <h2> <script>
+                document.write(film);
+        </script></h2>
+      <span>Film</span>
+    </div>
+    <div class="name">
+      <h2><script>
+                document.write(imie);
+        </script></h2>
+      <span>Imie i nazwisko</span>
+    </div>
+    <div class="seat">
+     <h2><script>
+                document.write(miejsce);
+        </script></h2>
+      <span>miejsce</span>
+    </div>
+    <div class="time">
+      <h2><script>
+                document.write(godzina);
+        </script></h2>
+      <span>Godzina</span>
+    </div>
+    
+  </div>
+  <div class="card cardRight">
+    <div class="eye"></div>
+    <div class="number">
+       <h3><script>
+                document.write(miejsce);
+        </script></h3>
+      <span>miejsce</span>
+    </div>
+    <div class="barcode"></div>
+  </div>
+
+</div>
